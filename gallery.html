@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Football Journey</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      padding-top: 10px;
+      margin: 0;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar-brand img {
+      height: 60px;
+    }
+
+    .custom-heading-margin {
+      margin-top: 80px;
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+      border: 5px solid #fff;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .img-fluid:hover {
+      transform: scale(1.1);
+    }
+
+    .gallery-item {
+      margin-bottom: 60px;
+      text-align: center;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="media/logo2.png" alt="logo" height="60" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">PROFILE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/YousefDiab03" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/yousefplaysfooty" target="_blank">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4 custom-heading-margin">AL AHLI CLUB - JORDAN (AGE 14-18) JORDANIAN YOUTH LEAGUE U18</h2>
+    <div class="row">
+      <div class="col-md-4 gallery-item">
+        <img src="media/ahliPic.jpg" alt="Photo of Yousef" class="img-fluid">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="media/ahliTeam.jpg" alt="Photo of Yousef" class="img-fluid">
+      </div>
+    </div>
+
+    <h2 class="text-center mb-4">BEAC - HUNGARY (AGE 19-20) BLSZ II</h2>
+    <div class="row">
+      <div class="col-md-4 gallery-item">
+        <img src="media/BEAC7.jpg" alt="Photo of Yousef" class="img-fluid">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="media/BEAC5.jpg" alt="Photo of Yousef" class="img-fluid">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="media/BEAC13.jpg" alt="Photo of Yousef" class="img-fluid">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="media/BEAC10.jpg" alt="Photo of Yousef" class="img-fluid">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="media/BEAC6.jpg" alt="Photo of Yousef" class="img-fluid">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="media/BEAC8.jpg" alt="Photo of Yousef" class="img-fluid">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="media/BEAC11.jpg" alt="Photo of Yousef" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('a[href*="#"]')
+        .not('[href="#"]')
+        .not('[href="#carouselExampleControls"]')
+        .click(function (event) {
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000, function () {
+
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { 
+                  return false;
+                } else {
+                  $target.attr('tabindex', '-1');
+                  $target.focus(); 
+                };
+              });
+            }
+          }
+        });
+    });
+  </script>
+</body>
+
+</html>

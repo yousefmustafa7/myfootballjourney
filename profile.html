@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Football Journey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="media/logo2.png" alt="logo" height="60" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PROFILE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/YousefDiab03" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/yousefplaysfooty" target="_blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about-me" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mt-5">ABOUT ME</h2>
+                <p>
+                    I was born in Amman, Jordan, the country's capital city, into a family that loved football as much as anyone in Jordan. I have always loved this sport and started playing in a football academy when I was 8 years old.<br><br>
+
+                    Ever since I was very young, I had dreamed of having a career in football. I grew up idolizing the Brazilian players, watching how they play the game in a way that makes whoever is watching them fall in love with the game. I was truly blessed to have a supportive family that helped me pursue my goals.<br><br>
+                    As I was growing up, I was playing for Al Ahli youth team, which plays in the first division of the Jordanian league. After just a few matches, I was lucky enough to be called up to the national team, which I definitely consider a great achievement for me.<br><br>
+                    However, as part of my culture, education is highly important. My parents wanted me to focus on studying, not that they didn’t believe in me, but they told me it would be hard to live my dream in Jordan. I stood up to them though a bit, I wanted to fight back and see where football could take me. I was extremely happy when I landed this opportunity to come to Hungary as I could have both my education as well as exploring where my football path leads me.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="media/BEAC2.jpg" alt="Photo of Yousef" width="600">
+            </div>
+        </div>
+    </section>
+
+    <div class="container text-center">
+        <video src="media/My%20football%20highlights.mp4" controls poster="media/myHighlights.jpg" width="500"></video>
+        <video src="media/My%20training%20shots.mp4" controls poster="media/myTrainingShot.jpg" width="500"></video>
+    </div>
+
+    <div class="container text-center mt-4">
+        <a href="https://adatbank.mlsz.hu/player/1359326.html" target="_blank" class="btn btn-primary">Link to my profile</a>
+    </div>
+
+    <h2 class="text-center mt-4 mb-4">WEEK SCHEDULE</h2>
+
+    <table class="table table-bordered mx-auto">
+        <thead class="thead-dark">
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Individual training AM</td>
+                <td>Rest</td>
+                <td>Rest</td>
+                <td>Rest</td>
+                <td>Individual training AM</td>
+                <td>Matchday</td>
+                <td>Recovery session AM</td>
+            </tr>
+            <tr>
+                <td>Gym workout PM</td>
+                <td>Team training PM</td>
+                <td>Gym workout PM</td>
+                <td>Team training PM</td>
+                <td>Rest</td>
+                <td>Rest</td>
+                <td>Rest</td>
+            </tr>
+        </tbody>
+    </table>
+
+  <script>
+    $(document).ready(function () {
+      $('a[href*="#"]')
+        .not('[href="#"]')
+        .not('[href="#carouselExampleControls"]')
+        .click(function (event) {
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000, function () {
+
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { 
+                  return false;
+                } else {
+                  $target.attr('tabindex', '-1');
+                  $target.focus(); 
+                };
+              });
+            }
+          }
+        });
+    });
+  </script>
+</body>
+</html>

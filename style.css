@@ -1,0 +1,133 @@
+body {
+    background-color: #191919;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    padding-top: 20px;
+}
+
+h1.text-center {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 0;
+}
+
+.navbar-brand img {
+   width: 60px;
+   height: 65px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #191919;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #191919;
+    height: auto;
+    width: auto;
+}
+
+.navbar-nav {
+  margin-left: auto; 
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px; 
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    margin: 50px 0;
+}
+
+section h2 {
+    color: #eaeaea;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+tr:nth-child(odd) {
+  background-color: #e2e6ea;
+}
+
+tr:hover {
+  background-color: #cfd8dc;
+}
+
+.custom-heading-margin {
+  margin-top: 5rem;
+}
+
+.custom-size {
+  width: auto;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #191919;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: small;
+    padding-top: 20px;
+}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    background-color: #191919;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: medium;
+    padding-top: 20px;
+}
+}
+
+@media only screen and (min-width: 1025px) {
+  body {
+    background-color: #191919;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    padding-top: 20px;
+}
+}
